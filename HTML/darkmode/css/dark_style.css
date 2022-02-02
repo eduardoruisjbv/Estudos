@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    display: block;
 }
 body *{
     box-sizing: border-box;
@@ -8,7 +9,7 @@ body *{
     margin-top: 30px;
     width: 100vw;
     height: 71px;
-    background: linear-gradient(-90deg, #FFEFCF,#FF7A00,#ce6538,#c45f00);
+    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#5f8370);
     background-size: 500% 100%;
     position: relative;
     display:flex;
@@ -45,14 +46,14 @@ body *{
     font-size: 1.5em;
     text-align: center;
     transition: 0.2;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .navigation ul li.active a .icon{
     transform: translateY(-35px);
 }
 .navigation ul li a .text{
     position: absolute;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -69,7 +70,7 @@ transform: translateY(10px);
     top: -50%;
     width: 70px;
     height: 70px;
-    background: rgb(252, 0, 0);
+    background:#4d2cb3;
     border-radius: 50%;
     border: 6px solid rgb(255, 255, 255);
     transition: 0.5s;
@@ -114,7 +115,7 @@ transform: translateY(10px);
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(-90deg, #FFEFCF,#FF7A00,#ce6538,#c45f00);
+    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#5f8370);
     background-size:500% 100%;
     display: flex;
     justify-content: center;
@@ -131,18 +132,17 @@ transform: translateY(10px);
 }
 .left-login > h1{
     font-size: 3vw;
-    font-family: monospace;
-    letter-spacing: 0.5rem;
+    font-family: sans-serif;
     font-weight: 700;
-    color: rgb(0, 0, 0);
-    text-shadow: 0px 10px 40px rgba(32, 18, 0, 0.637);;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 20px rgb(117, 117, 117);
 }
 .left-login-image{
     width: 35vw;
     outline: none;
     border-radius:100px;
-    background: rgba(255, 143, 39, 0.651);
-    box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.877);;
+    background: rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 10px 40px -15px rgb(63, 63, 63);;
 
 }
 .right-login{
@@ -159,15 +159,15 @@ transform: translateY(10px);
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: rgba(233, 233, 233, 0.589);
+    background: rgb(25, 26, 53);
     border-radius: 20px;
     box-shadow: 0px 10px 40px black;
 }
 .card-login > h1{
-    color: red;
+    color: rgb(55, 0, 255);
     font-family: sans-serif;
     font-weight: 800;
-    text-shadow: 0px 10px 40px rgb(255, 0, 0);
+    text-shadow:0px 1px 20px rgba(38, 0, 255, 0.699);
 }
 .textfield{
     width: 100%;
@@ -184,15 +184,15 @@ transform: translateY(10px);
     border:none;
     border-radius: 10px;
     padding: 15px;
-    background: rgba(214, 214, 214, 0.425);
-    color: rgb(0, 0, 0);
+    background: rgb(26, 21, 44);
+    color: rgb(255, 254, 254);
     font-size: 12pt;
     box-shadow: 0px 10px 40px -10px rgb(24, 24, 24);
     outline: none;
     box-sizing: border-box;
 }
 .textfield > label{
-    color: rgb(32, 32, 32);
+    color: rgb(175, 202, 214);
 }
 .btn-login{
     width: 100%;
@@ -204,10 +204,10 @@ transform: translateY(10px);
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: white;
-    background: red;
+    color: rgb(255, 255, 255);
+    background: rgb(4, 0, 255);
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px red;
+    box-shadow: 0px 10px 40px -12px rgb(0, 81, 255);
 }
 @keyframes colors{
     0%{
