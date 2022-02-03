@@ -1,6 +1,8 @@
 body{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     display: block;
+    background-color: rgb(26, 21, 44);
 }
 body *{
     box-sizing: border-box;
@@ -9,14 +11,14 @@ body *{
     margin-top: 30px;
     width: 100vw;
     height: 71px;
-    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#5f8370);
+    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#86e4b2);
     background-size: 500% 100%;
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius: -10px;
-    animation: colors 5s ease infinite;
+    animation: colors 8s ease infinite;
 }
 .navigation ul{
     display: flex;
@@ -72,7 +74,7 @@ transform: translateY(10px);
     height: 70px;
     background:#4d2cb3;
     border-radius: 50%;
-    border: 6px solid rgb(255, 255, 255);
+    border: 6px solid rgb(26, 21, 44);
     transition: 0.5s;
 }
 .indicator::before{
@@ -84,7 +86,7 @@ transform: translateY(10px);
     height:20px;
     background:transparent;
     border-top-right-radius:20px;
-    box-shadow: 0px -8px 0 0 rgb(255, 255, 255);
+    box-shadow: 0px -8px 0 0 rgb(26, 21, 44);
 }
 .indicator::after{
     content:'';
@@ -95,7 +97,7 @@ transform: translateY(10px);
     height:20px;
     background:transparent;
     border-top-left-radius:20px;
-    box-shadow: 0px -8px 0 0 rgb(255, 255, 255);
+    box-shadow: 0px -8px 0 0 rgb(26, 21, 44);
 }
 .navigation ul li:nth-child(1).active ~ .indicator{
     transform: translateX(calc(70px * 0));
@@ -115,12 +117,12 @@ transform: translateY(10px);
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#5f8370);
+    background: linear-gradient(90deg, #170055,#4d2cb3,#AE00FB,#86e4b2);
     background-size:500% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: colors 5s ease infinite;
+    animation: colors 8s ease infinite;
 }
 .left-login{
     width: 50vw;
@@ -141,8 +143,8 @@ transform: translateY(10px);
     width: 35vw;
     outline: none;
     border-radius:100px;
-    background: rgba(0, 0, 0, 0.11);
-    box-shadow: 0px 10px 40px -15px rgb(63, 63, 63);;
+    background: rgba(65, 189, 178, 0.11);
+    box-shadow: 0px 10px 40px -15px rgb(0, 0, 0);;
 
 }
 .right-login{
@@ -159,7 +161,7 @@ transform: translateY(10px);
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: rgb(25, 26, 53);
+    background: rgba(25, 26, 53, 0.678);
     border-radius: 20px;
     box-shadow: 0px 10px 40px black;
 }
@@ -246,4 +248,74 @@ transform: translateY(10px);
     .card-login{
         width: 90%;
     }
+}
+section{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 10px;
+    background:rgb(26, 21, 44);
+    width: 100vw;
+    height: 100vh;
+}
+section h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 0px 10px 50px rgb(255, 255, 255);
+}
+section p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0px 10px 50px rgba(255, 255, 255, 0.473);
+}
+::-webkit-scrollbar
+{
+    width: 0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        filter:hue-rotate(0deg)
+    }
+    50%
+    {
+        filter:hue-rotate(360deg)
+    }
+}
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7,);
+
 }
